@@ -39,6 +39,16 @@ body
 	
 .title--big
 	font-size: 80px  
+
+.header
+	display: flex
+	-webkit-flex-direction: row
+	-ms-flex-direction: row
+	flex-direction: row
+	-webkit-justify-content: space-between 
+	justify-content: space-between 
+	
+	padding-top: 65px
 	
 // Search
 .serch__input
@@ -68,17 +78,34 @@ body
 	:-ms-input-placeholder
 		color: $text-color
 	
+	 
+.search__label
 	&:before
 		content: ""
 		display: block
 		position: absolute
-		top: 0
-		left: 0
+		top: 70px
+		left: 1085px
 		width: 22px
 		height: 22px
-		background-color: red 
-		background: url("img/search.svg") no-repeat center   
-
+		z-index: 2
+		background: url("/img/search.svg") no-repeat center  
+		
+// Grid-box
+.grid-box
+	display: grid
+	grid-template-columns: repeat(3, 1fr)
+	grid-gap: 40px
+	
+.grid-box__item
+	background-color: #f6f6f6 
+	min-height: 400px
+	
+	&:nth-child(1)
+		grid-column: 1 / 4
+		
+	&:nth-child(2)
+		grid-column: 1 / 2
 
 	
 	
