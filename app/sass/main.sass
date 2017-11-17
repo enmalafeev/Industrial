@@ -49,6 +49,7 @@ body
 	justify-content: space-between 
 	
 	padding-top: 65px
+	margin-bottom: 50px
 	
 // Search
 .serch__input
@@ -93,23 +94,46 @@ body
 		
 // Grid-box
 .grid-box
-	display: grid
-	grid-template-columns: repeat(3, 1fr)
-	grid-gap: 40px
-	
+	display: flex
+	-webkit-flex-direction: row 
+	-ms-flex-direction: row 
+	flex-direction: row
+	flex-wrap: wrap
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
 .grid-box__item
 	background-color: #f6f6f6 
-	min-height: 400px
-	
+		
 	&:nth-child(1)
-		grid-column: 1 / 4
+		width: 100%
+		min-height: 690px
+		margin-bottom: 40px
 		
 	&:nth-child(2)
-		grid-column: 1 / 2
+		width: 560px
+		min-height: 690px
+		margin-right: 40px
+		margin-bottom: 40px
 
+	&:nth-child(3)
+		width: 540px
+		margin-bottom: 40px
+		
+	&:nth-child(4)
+		width: 360px
+		min-height: 440px
+		margin-right: 40px
 	
-	
+	&:nth-child(5)
+		width: 360px
+		min-height: 440px
+		margin-right: 40px
 
+	&:nth-child(6)
+		width: 360px
+		min-height: 440px
 
 
 
