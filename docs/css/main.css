@@ -417,6 +417,13 @@ html {
   -webkit-box-sizing: inherit;
   box-sizing: inherit; }
 
+a {
+  font-family: "leaguespartan", sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 48px; }
+
 body {
   font-family: 'HkgroteskLight', sans-serif;
   font-size: 16px;
@@ -424,7 +431,7 @@ body {
   background-color: #272f45; }
 
 .wrapper {
-  width: 1164px;
+  width: 1160px;
   height: 100%;
   text-align: center;
   margin: 0 auto; }
@@ -436,7 +443,16 @@ body {
   text-transform: uppercase; }
 
 .title--big {
-  font-size: 80px; }
+  font-size: 80px;
+  text-align: left;
+  margin: 0;
+  padding-top: 110px;
+  padding-bottom: 50px; }
+
+.title--small {
+  font-size: 36px;
+  padding-top: 20px;
+  padding-bottom: 35px; }
 
 .header {
   display: -webkit-box;
@@ -455,8 +471,9 @@ body {
   padding-top: 65px;
   margin-bottom: 50px; }
 
-.serch__input {
-  position: relative;
+.search__input {
+  font-family: "HkgroteskLight", sans-serif;
+  font-size: 24px;
   width: 176px;
   padding-left: 34px;
   padding-right: 34px;
@@ -471,21 +488,23 @@ body {
   border-bottom: 3px solid #92a1a9;
   -moz-placeholder-color: #92a1a9;
   -ms-input-placeholder-color: #92a1a9; }
-  .serch__input ::-webkit-input-placeholder {
+  .search__input ::-webkit-input-placeholder {
     color: #92a1a9; }
-  .serch__input ::-moz-placeholder {
+  .search__input ::-moz-placeholder {
     color: #92a1a9; }
 
-.search__label:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 70px;
-  left: 1085px;
-  width: 22px;
-  height: 22px;
-  z-index: 2;
-  background: url("/img/search.svg") no-repeat center; }
+.search__label {
+  position: relative; }
+  .search__label:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    z-index: 2;
+    background: url("../img/search.svg") no-repeat center; }
 
 .grid-box {
   display: -webkit-box;
@@ -504,27 +523,204 @@ body {
   box-sizing: border-box; }
 
 .grid-box__item {
-  background-color: #f6f6f6; }
+  background-color: #f6f6f6;
+  position: relative; }
   .grid-box__item:nth-child(1) {
     width: 100%;
-    min-height: 690px;
-    margin-bottom: 40px; }
+    height: 690px;
+    margin-bottom: 40px;
+    background: url(../img/Gina.png) no-repeat center; }
   .grid-box__item:nth-child(2) {
     width: 560px;
-    min-height: 690px;
+    min-height: 520px;
     margin-right: 40px;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    background-color: #60b8a3;
+    background: url(../img/Beoplay.png) no-repeat center; }
   .grid-box__item:nth-child(3) {
-    width: 540px;
-    margin-bottom: 40px; }
+    width: 560px;
+    min-height: 520px;
+    margin-bottom: 40px;
+    background-color: #7778c6;
+    background: url(../img/Leica.png) no-repeat center; }
   .grid-box__item:nth-child(4) {
     width: 360px;
     min-height: 440px;
-    margin-right: 40px; }
+    margin-right: 40px;
+    background-color: #e97864;
+    background: url(../img/Molekule.png) no-repeat center; }
   .grid-box__item:nth-child(5) {
     width: 360px;
     min-height: 440px;
-    margin-right: 40px; }
+    margin-right: 40px;
+    background-color: #557581;
+    background: url(../img/P9.png) no-repeat center; }
   .grid-box__item:nth-child(6) {
     width: 360px;
-    min-height: 440px; }
+    min-height: 440px;
+    background-color: #82c9d8;
+    background: url(../img/DR.png) no-repeat center; }
+
+.item-wrap {
+  padding: 0; }
+
+.wrap1 {
+  width: 440px;
+  min-height: 465px;
+  padding-left: 60px; }
+
+.wrap2 {
+  padding-top: 60px;
+  padding-right: 30px;
+  width: 500px;
+  height: 240px; }
+
+.wrap3 {
+  padding-top: 60px;
+  padding-left: 30px;
+  width: 360px;
+  height: 240px; }
+
+.wrap4 {
+  width: 270px;
+  height: 145px;
+  padding-top: 65px;
+  margin: 0 auto; }
+
+.wrap5 {
+  padding-top: 260px; }
+
+.item-title {
+  margin: 0;
+  padding-bottom: 25px; }
+
+.item-desc {
+  font-family: "HkgroteskLight", sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 65px; }
+
+.fs--big {
+  font-size: 32px;
+  padding-bottom: 140px; }
+
+.item-text {
+  font-size: 16px;
+  color: #ffffff; }
+
+.btn {
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 120px;
+  height: 48px;
+  border: 3px solid #eec9a2;
+  margin: 0 auto;
+  text-transform: uppercase; }
+  .btn:hover {
+    opacity: 0.5; }
+
+.btn--big {
+  width: 160px;
+  height: 60px;
+  line-height: 60px; }
+
+.watermark {
+  width: 116px;
+  height: 116px;
+  background: url(../img/kickstarter.png) no-repeat center;
+  position: absolute;
+  top: 37px;
+  right: 37px; }
+
+.tal {
+  text-align: left; }
+
+.tar {
+  text-align: right; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.subscribe {
+  width: 805px;
+  min-height: 290px;
+  margin: 0 auto; }
+
+.subscribe__title {
+  font-size: 36px;
+  color: #92a1a9;
+  margin: 0;
+  padding-top: 160px; }
+
+.subscribe__desc {
+  font-size: 18px;
+  color: #92a1a9;
+  padding-bottom: 50px; }
+
+.email {
+  display: block;
+  width: 360px;
+  height: 60px;
+  background-color: #272f45;
+  border: 3px solid #92a1a9;
+  margin: 0 auto;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.submit {
+  font-family: "leaguespartan", sans-serif;
+  font-size: 18px;
+  display: block;
+  width: 360px;
+  height: 60px;
+  background-color: #272f45;
+  border: 3px solid #82c9d8;
+  margin: 0 auto;
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 100px; }
+  .submit:hover {
+    opacity: 0.7; }
+
+.footer {
+  width: 100%; }
+
+.menu {
+  width: 550px;
+  margin: 0 auto; }
+  .menu__link {
+    display: inline-block;
+    font-family: "HkgroteskLight", sans-serif;
+    font-size: 24px;
+    color: #92a1a9;
+    position: relative;
+    padding-right: 35px; }
+    .menu__link:hover {
+      opacity: 0.5; }
+    .menu__link:last-child {
+      padding-right: 0; }
+    .menu__link:not(:last-child):after {
+      content: "";
+      display: block;
+      width: 6px;
+      height: 6px;
+      -webkit-border-radius: 50%;
+        -webkit-border-radius-border-radius: 50%;
+      position: absolute;
+      top: 24px;
+      right: 12px;
+      background-color: #92a1a9; }
+
+.copyright {
+  font-family: "HkgroteskLight";
+  font-size: 18px;
+  color: #92a1a9;
+  margin-bottom: 70px; }
