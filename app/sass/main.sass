@@ -228,6 +228,7 @@ body
 	box-sizing: border-box
 	width: 120px
 	height: 48px
+	line-height: 42px
 	border: 3px solid $border-color
 	margin: 0 auto
 	text-transform: uppercase
@@ -239,7 +240,7 @@ body
 .btn--big
 	width: 160px
 	height: 60px
-	line-height: 60px
+	line-height: 54px
 	
 .watermark
 	width: 116px
@@ -284,11 +285,13 @@ body
 	display: block
 	width: 360px
 	height: 60px
+	line-height: 54px
 	background-color: $main 
 	border: 3px solid $text-color
 	margin: 0 auto
 	font-size: 24px
 	text-align: center
+	vertical-align: middle
 	margin-bottom: 20px
 	
 .submit
@@ -297,11 +300,13 @@ body
 	display: block
 	width: 360px
 	height: 60px
+	line-height: 54px
 	background-color: $main 
 	border: 3px solid $blue
 	margin: 0 auto
 	font-size: 24px
 	text-align: center
+	vertical-align: middle
 	color: $white
 	margin-bottom: 100px
 	
@@ -326,6 +331,11 @@ body
 		
 		&:hover
 			opacity: 0.5
+			-webkit-transition: 0.3s ease all 
+			-moz-transition: 0.3s ease all 
+			-ms-transition: 0.3s ease all 
+			-o-transition: 0.3s ease all 
+			transition: 0.3s ease all 
 		
 		&:last-child
 			padding-right: 0
